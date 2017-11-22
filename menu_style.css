@@ -1,0 +1,60 @@
+body {font-family: Oswald,Tahoma,Geneva,sans-serif;color: #333745;margin:100px 0 0 0;padding:0;}
+
+.container {height:100%;width:100%;display:block;float:left;}
+
+.nav-wrapper {float:left;clear:both;padding:0px;height:40px;width:100%;background-color:#ccc;}
+
+nav ul {
+    list-style:none;
+    margin:0 auto;
+    padding:0;
+	width:1000px;
+	display:block;
+	clear:both;
+	line-height:40px;
+	position:relative;
+}
+nav ul li {text-align:left;float:left;color:#fff;margin:0 0 0 0;padding:0;}
+nav ul li a {color:#fff;text-align:center;text-decoration:none;}
+nav ul li a:hover, nav ul li:hover {color:#c30000;}
+nav ul li a:hover h2, nav ul li:hover h2 {color:#fff !important;}
+nav ul li:after {content: "\f105";font: normal normal normal 14px/1 FontAwesome;text-rendering: auto;-webkit-font-smoothing: antialiased;margin:3px 10px 0 10px;padding:0 0px 0 0px;font-size:16px;}
+nav ul li.dropdown:after {content:"\f107" !important;}
+.toggledmenu {display:none;}	
+		
+/* sub navigation */
+nav li .sub-menu {
+    position:absolute;z-index:15;
+	margin:0px;padding:10px;width:auto;clear:both;float:none;
+    left:0px;
+    top:40px; /* make this equal to the line-height of the links (specified below) */
+    min-width:200px;
+    background-color:#ddd;
+    list-style:none;
+    width:1000px;
+}
+nav li .sub-menu h2 {padding:0;margin:0;font-size:1em;}
+nav ul li .sub-menu ul {width:auto;line-height:20px;}
+
+nav li .sub-menu .sub-menu-block {
+	display:block;
+	float:left;
+}
+nav li li {
+	padding:0px 0px 5px 20px !important;
+	margin:0 0px 0 0 !important;
+	font-size:1em;
+	color:#000;
+	text-align:left !important;
+	float:none;
+	clear:both;
+}
+nav li li:before {content: "\f105" !important;color:#fff;font: normal normal normal 14px/1 FontAwesome;text-rendering: auto;-webkit-font-smoothing: antialiased;margin:0 5px 0 -15px;padding:0 0px 0 0px;font-size:16px;}
+nav li li:hover:before {color:#c30000;}
+nav li li:after {content: "" !important;}
+nav ul li ul li a {color:#000;text-align:left;cursor:pointer;}
+nav ul li ul li a:hover, .leftstripe nav ul li ul li:hover {color:#c30000;}
+nav li li:hover {}
+.sub-menu {
+    display:none;
+}
